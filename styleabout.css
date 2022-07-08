@@ -1,0 +1,103 @@
+::-webkit-scrollbar{
+	display: none;
+}
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+.banner{
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(rgba(1, 0, 0, 0.5),rgba(1, 0, 0, 0.5)),url("about.jpg");
+	background-size: cover;
+	background-position:center;
+	background-repeat: no-repeat;
+}
+.navbar{
+	width: 85%;
+	margin: auto;
+	padding: 25px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-size: 13px;
+}
+.logo{
+	width: 100px;
+	cursor: pointer;
+}
+.navbar ul li{
+	list-style: none;
+	display: inline-block;
+	margin: 0 20px;
+	position: relative;
+}
+.navbar ul li a{
+	text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
+}
+.navbar ul li::after{
+	content: '';
+	height: 3px;
+	width: 0;
+	background: #009688;
+	position: absolute;
+	left: 0;
+	bottom:-10px;
+	transition: 0.5s;
+}
+.navbar ul li:hover::after{
+	width: 100%;
+}
+.content{
+	width: 100%;
+	position: absolute;
+	top: 65%;
+	transform: translateY(-50%);
+	color: white;
+	padding-left: 220px;
+}
+.content h1{
+	font-size: 60px;
+}
+.content p{
+	margin: 20px auto;
+	font-weight: 100;
+	line-height: 25px;
+	padding-left: 25px;
+}
+.navbar1 a{
+	text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
+}
+.navbar1 ::after{
+	content: '';
+	height: 3px;
+	width: 0;
+	background: #009688;
+	position: absolute;
+	left: 0;
+	bottom:-10px;
+	transition: 0.5s;
+}
+.navbar1 :hover::after{
+	width: 100%;
+}
+#tooltip{
+	display: none;
+	border: solid 0.1%;
+	color: white;
+}
+#tooltip1{
+	display: none;
+	border: solid 0.1%;
+	color: white;
+}
+#tooltip2{
+	display: none;
+	border: solid 0.1%;
+	color: white;
+}
